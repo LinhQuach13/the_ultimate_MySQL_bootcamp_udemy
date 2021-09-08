@@ -15,8 +15,17 @@ CREATE TABLE cats
 --- Verify table was made
 SHOW TABLES;
 
--- Show columns and datatypes of columns from cats table
+--- Show columns and datatypes of columns from cats table
 SHOW COLUMNS FROM cats;
 
 --- another way to show column names and datatypes of columns
+DESC cats;
+
+--- Delete tables
+DROP TABLE cats;
+
+--- Verify table was deleted/dropped
+SHOW TABLES;
+
+--- another way to verify table was deleted/dropped, will receive an error because table no longer exists
 DESC cats;
