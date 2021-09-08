@@ -38,7 +38,13 @@ CREATE DATABASE bakery;
 USE bakery;
 
 --- Create pastries table
-CREATE TABLE pastries ( name VARCHAR(50), quantity INT );
+CREATE TABLE pastries (name VARCHAR(50), quantity INT);
 
 --- Verify table was made
 SHOW TABLES;
+
+--- View column name and column datatypes
+DESC pastries;
+
+--- Note: can use this command to see which database is selected
+SELECT database();
