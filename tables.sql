@@ -4,3 +4,10 @@ CREATE DATABASE cat_app;
 
 ---Use newly created cat_app database
 USE cat_app;
+
+--- Create cats table 
+CREATE TABLE cats
+  (
+    name VARCHAR(100),
+    age INT
+  );
