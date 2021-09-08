@@ -65,3 +65,11 @@ SELECT database();
 
 --- Create cats table with cat name (50 character limit) and age
 CREATE TABLE cats(name VARCHAR(50), age INT);
+
+--- Insert new values into table
+INSERT INTO cats(name, age)
+VALUES('Blue', 1);
+
+--- Insert another set of new values into table
+INSERT INTO cats(age, name)
+VALUES(11, 'Draco');
