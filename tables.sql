@@ -54,3 +54,14 @@ DROP TABLE pastries;
 
 --- Verify table was deleted/dropped
 SHOW TABLES;
+
+
+-------USING INSERT COMMAND---------
+--- Change to cat_app database
+USE cat_app;
+
+--- verify which database is selected
+SELECT database();
+
+--- Create cats table with cat name (50 character limit) and age
+CREATE TABLE cats(name VARCHAR(50), age INT);
