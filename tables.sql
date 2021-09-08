@@ -11,3 +11,6 @@ CREATE TABLE cats
     name VARCHAR(100),
     age INT
   );
+
+--- Verify table was made
+SHOW TABLES;
