@@ -67,9 +67,11 @@ SELECT database();
 CREATE TABLE cats(name VARCHAR(50), age INT);
 
 --- Insert new values into table
+--- REMEMBER Order here MATTERS
 INSERT INTO cats(name, age)
 VALUES('Blue', 1);
 
 --- Insert another set of new values into table
+--- REMEMBER Order here MATTERS
 INSERT INTO cats(age, name)
 VALUES(11, 'Draco');
