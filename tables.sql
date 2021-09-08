@@ -14,3 +14,9 @@ CREATE TABLE cats
 
 --- Verify table was made
 SHOW TABLES;
+
+-- Show columns and datatypes of columns from cats table
+SHOW COLUMNS FROM cats;
+
+--- another way to show column names and datatypes of columns
+DESC cats;
