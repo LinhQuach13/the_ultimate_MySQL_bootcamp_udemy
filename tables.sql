@@ -29,3 +29,16 @@ SHOW TABLES;
 
 --- another way to verify table was deleted/dropped, will receive an error because table no longer exists
 DESC cats;
+
+
+--- Create a database for pasteries 
+CREATE DATABASE bakery;
+
+--- Use bakery database
+USE bakery;
+
+--- Create pastries table
+CREATE TABLE pastries ( name VARCHAR(50), quantity INT );
+
+--- Verify table was made
+SHOW TABLES;
