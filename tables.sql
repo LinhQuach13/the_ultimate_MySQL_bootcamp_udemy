@@ -48,3 +48,9 @@ DESC pastries;
 
 --- Note: can use this command to see which database is selected
 SELECT database();
+
+--- Drop/delete pastries table
+DROP TABLE pastries;
+
+--- Verify table was deleted/dropped
+SHOW TABLES;
