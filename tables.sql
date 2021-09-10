@@ -163,3 +163,14 @@ SELECT database();
 
 --- Verify table was made---
 SHOW TABLES;
+
+--- Look at columns and datatypes---
+DESC people;
+
+---Insert first person---
+INSERT INTO people(first_name, last_name, age)
+VALUES('Tina', 'Belcher', 13);
+
+--- Insert second person---
+INSERT INTO people(age, first_name, last_name)
+VALUES(42, 'Bob', 'Belcher');
