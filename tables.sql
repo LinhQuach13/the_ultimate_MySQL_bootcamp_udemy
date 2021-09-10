@@ -174,3 +174,21 @@ VALUES('Tina', 'Belcher', 13);
 --- Insert second person---
 INSERT INTO people(age, first_name, last_name)
 VALUES(42, 'Bob', 'Belcher');
+
+---Insert multiple people---
+INSERT INTO people (first_name, last_name, age)
+VALUES('Linda', 'Belcher', 45),
+('Phillip', 'Frond', 38),
+('Calvin', 'Fischoeder', 70);
+
+--Verify Values were entered---
+SELECT * FROM people;
+
+--- Delete people table--
+DROP TABLE people;
+
+---If you do command below it should produce an error because people table no longer exists---
+SELECT * FROM people;
+
+--- Verify table was dropped by looking list of tables---
+SHOW TABLES;
