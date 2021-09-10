@@ -115,3 +115,19 @@ SHOW tables;
 
 --- Look at columns and datatypes in tables---
 DESC people;
+
+--Insert first person---
+INSERT INTO people(first_name, last_name, age) 
+VALUES("'Tina'", "'Belcher'", 13);
+
+---Insert second person---
+--changed order here, REMEBER ORDER MATTERS---
+INSERT INTO people(last_name, first_name, age)
+    -> VALUES("'Bob'", "'Belcher'", 42);
+
+--- Put names in the wrong order above, need to delete Belcher Bob and redo---
+DELETE FROM people WHERE last_name = 'Bob';
+
+--- Adding Bob Belcher the correct way---
+INSERT INTO people(last_name, first_name, age)
+    -> VALUES("'Belcher'", "'Bob'", 42);
