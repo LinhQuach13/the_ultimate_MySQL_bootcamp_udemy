@@ -67,14 +67,23 @@ SELECT database();
 CREATE TABLE cats(name VARCHAR(50), age INT);
 
 --- Insert new values into table
---- REMEMBER Order here MATTERS
+--- REMEMBER ORDER here MATTERS
 INSERT INTO cats(name, age)
 VALUES('Blue', 1);
 
 --- Insert another set of new values into table
---- REMEMBER Order here MATTERS
+--- REMEMBER ORDER here MATTERS
 INSERT INTO cats(age, name)
 VALUES(11, 'Draco');
 
 --- Command used to see all values from cats table
 SELECT * FROM cats;
+
+
+-------Multiple Insert ("Bulk" insert data)------------
+
+----Insert multiple cat values to table-----
+INSERT INTO cats(name, age)
+VALUES ('Peanut', 2)
+,('Butter', 4)
+,('Jelly', 7);
