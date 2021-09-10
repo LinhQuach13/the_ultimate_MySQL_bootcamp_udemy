@@ -87,3 +87,6 @@ INSERT INTO cats(name, age)
 VALUES ('Peanut', 2)
 ,('Butter', 4)
 ,('Jelly', 7);
+
+---Verify values were added to table---
+SELECT * FROM cats;
