@@ -116,11 +116,11 @@ SHOW tables;
 --- Look at columns and datatypes in tables---
 DESC people;
 
---Insert first person---
+--Insert first person(with quotes in name)---
 INSERT INTO people(first_name, last_name, age) 
 VALUES("'Tina'", "'Belcher'", 13);
 
----Insert second person---
+---Insert second person (with quotes in name)---
 --changed order here, REMEBER ORDER MATTERS---
 INSERT INTO people(last_name, first_name, age)
     -> VALUES("'Bob'", "'Belcher'", 42);
@@ -131,3 +131,35 @@ DELETE FROM people WHERE last_name = 'Bob';
 --- Adding Bob Belcher the correct way---
 INSERT INTO people(last_name, first_name, age)
     -> VALUES("'Belcher'", "'Bob'", 42);
+
+--Insert multiple people (with quotes in name)--
+INSERT INTO people(first_name, last_name, age)
+VALUES("'Linda'", "'Belcher'", 45),
+("'Phillip'", "'Frond'", 38),
+("'Calvin'", "'Fischoeder'", 70);
+
+
+--- View values that were inserted---
+SELECT * FROM people;
+
+--- Delete people table--
+DROP TABLE people;
+
+---If you do command below it should produce an error because people table no longer exists---
+SELECT * FROM people;
+
+--- Verify table was dropped by looking list of tables---
+SHOW TABLES;
+
+---Check which database I am in---
+SELECT database();
+
+
+--Create people table again---
+ CREATE TABLE people (
+   first_name VARCHAR(20),
+   last_name VARCHAR(20),
+   age INT);
+
+--- Verify table was made---
+SHOW TABLES;
