@@ -90,3 +90,22 @@ VALUES ('Peanut', 2)
 
 ---Verify values were added to table---
 SELECT * FROM cats;
+
+
+
+---Create a people database---
+CREATE DATABASE people;
+
+---Verify database was made---
+SHOW databases;
+
+---Use people database---
+USE people;
+
+--- Create people table---
+CREATE TABLE people
+  (
+    first_name VARCHAR(20),
+    last_name VARCHAR(20),
+    age INT
+  );
