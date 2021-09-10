@@ -75,3 +75,6 @@ VALUES('Blue', 1);
 --- REMEMBER Order here MATTERS
 INSERT INTO cats(age, name)
 VALUES(11, 'Draco');
+
+--- Command used to see all values from cats table
+SELECT * FROM cats;
