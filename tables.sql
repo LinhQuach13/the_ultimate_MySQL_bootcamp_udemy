@@ -109,3 +109,9 @@ CREATE TABLE people
     last_name VARCHAR(20),
     age INT
   );
+
+---Verify table was made---
+SHOW tables;
+
+--- Look at columns and datatypes in tables---
+DESC people;
