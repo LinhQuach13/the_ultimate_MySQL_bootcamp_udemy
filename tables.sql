@@ -208,12 +208,27 @@ SHOW WARNINGS;
 --- you will see in name the sentence is cut off
 SELECT * FROM cats;
 
+-- Insert values into cats table; this will produce an error (Query OK, 1 row affected, 1 warning (0.01 sec))
 -- This will create a warning because age value should be a integer datatype not a string value
 INSERT INTO cats(name, age)
 VALUES('Lima', 'afadshjd');
 
 
 --- Can look at warnings in more detail
---- warning here states Data truncated for column 'name' at row 1
+--- warning here states we are using the wrong datatype for age
 --- this warning is stating incorrect integer value: 'afadshjd' for column 'age' at row 1
+SHOW WARNINGS;
+
+--- look at values in columns, Will see a 0 under age we just entered
+SELECT * from cats;
+
+-- Insert values into cats table; this will produce an error (Query OK, 1 row affected, 1 warning (0.01 sec))
+INSERT INTO cats(name, age) VALUES ('Cuzco', 'ajfhahsgds');
+
+--- Look at values in columns
+SELECT * from cats;
+
+
+--- If you run show warnings out of order like this it will produce empty set as output instead of giving you more 
+---details about the warning. This is something to keep in mind when running SQL in the terminal.
 SHOW WARNINGS;
