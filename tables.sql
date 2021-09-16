@@ -247,3 +247,16 @@ DESC cats;
 
 --- this was make a new row with only null values 
 INSERT into cats() VALUES ();
+
+
+--- can specify when making a table for there to be no null values
+--- as you can see in this new table being made below
+CREATE TABLE cats2
+ (
+  name VARCHAR(100) NOT NULL,
+  age INT NOT NULL
+ );
+
+
+ --- verify table was made
+ DESC cats2;
