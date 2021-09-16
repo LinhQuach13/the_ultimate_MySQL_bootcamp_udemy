@@ -192,3 +192,18 @@ SELECT * FROM people;
 
 --- Verify table was dropped by looking list of tables---
 SHOW TABLES;
+
+--- Insert values into cats table (long name value); this will produce an error (Query OK, 1 row affected, 1 warning (0.01 sec))
+INSERT INTO cats(name, age)
+VALUES('This cat is named Charlie which is also a human name. In fact I know a couple of Charlies. Fun Fact',
+10);
+
+
+--- Can look at warnings in more detail
+--- warning here states Data truncated for column 'name' at row 1
+--- this is stating the characters in the name column has exceeded the limit of 50 characters that was set.
+SHOW WARNINGS;
+
+--- Look at values in columns
+--- you will see in name the sentence is cut off
+SELECT * FROM cats;
