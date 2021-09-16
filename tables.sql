@@ -232,3 +232,18 @@ SELECT * from cats;
 --- If you run show warnings out of order like this it will produce empty set as output instead of giving you more 
 ---details about the warning. This is something to keep in mind when running SQL in the terminal.
 SHOW WARNINGS;
+
+--Insert name value but not age value
+INSERT INTO cats(name) VALUES('Alabama');
+
+
+--- Look at all values
+SELECT * from cats;
+
+
+---can see null values are allowed in age column
+DESC cats;
+
+
+--- this was make a new row with only null values 
+INSERT into cats() VALUES ();
