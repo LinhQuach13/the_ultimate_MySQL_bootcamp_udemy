@@ -289,4 +289,5 @@ CREATE TABLE cats2
 
 
   --- you will see here that the name value is empty next to age 7 that was set
+  --- it's an empty string, it's a type of VARCHAR value that has nothing in it, this is different from null values for integers
   SELECT * FROM cats2;
