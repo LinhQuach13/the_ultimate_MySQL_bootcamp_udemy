@@ -281,3 +281,12 @@ CREATE TABLE cats2
  --- add value to age but not to name
  -- this will be the output: Query OK, 1 row affected, 1 warning (0.12 sec)
  INSERT INTO cats2(age) VALUES(7);
+
+  --- Look at warning in more detail
+ --- Field 'name' doesn't have a default value
+ -- this is because we didn't put a value for name and there is no default value set here
+  SHOW WARNINGS;
+
+
+  --- you will see here that the name value is empty next to age 7 that was set
+  SELECT * FROM cats2;
