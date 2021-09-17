@@ -259,4 +259,20 @@ CREATE TABLE cats2
 
 
  --- verify table was made
+ --- under NULL field will see it will say NO
  DESC cats2;
+
+ --- add name value but not age value to cats2 table
+ --- this was create a warning
+ INSERT INTO cats2(name) VALUES('Texas');
+
+ --- Look at warning in more detail
+ --- Field 'age' doesn't have a default value
+ -- this is because we didn't put a value for age and there is no default value set here
+  SHOW WARNINGS;
+
+ --- under EXTRA field, it is empty because a default value was not set
+ DESC cats2;
+
+ --- can see here the age value is 0 because a default was not set and it was not allowed to be a null value
+ SELECT * FROM cats2;
