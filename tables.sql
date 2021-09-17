@@ -276,3 +276,8 @@ CREATE TABLE cats2
 
  --- can see here the age value is 0 because a default was not set and it was not allowed to be a null value
  SELECT * FROM cats2;
+
+
+ --- add value to age but not to name
+ -- this will be the output: Query OK, 1 row affected, 1 warning (0.12 sec)
+ INSERT INTO cats2(age) VALUES(7);
