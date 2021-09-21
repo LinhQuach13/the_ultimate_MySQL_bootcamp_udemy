@@ -6,7 +6,7 @@ This a repository containing exercises and projects completed from the Udemy Cou
 * [Language](#language)
 * [Creating Databases](#creatingDB)
 * [Tables in SQL](#tablesSQL)
-* [Acknowlegdements](#acknowledegment)
+* [Acknowlegdements](#acknowledgement)
 
 
 ## <a name="language"></a> Language: 
@@ -19,7 +19,7 @@ Exercises for creating databases.
 Exercises for working with tables in SQL.
 
 
-## Acknowledgements
+## <a name="acknowledgement"></a>Acknowledgements
 - The projects/exercises used was based on [this udemy course](https://www.udemy.com/share/101Wq03@FEkWV8Zh72Mks_g2LgWEY45dr-jzzUMN-fkJjlJeBhUc2GCshPAL40bWLH-3EonOPA==/).
 - Name of Udemy Course: The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert.
 
