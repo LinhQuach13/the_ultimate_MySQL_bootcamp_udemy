@@ -304,3 +304,9 @@ CREATE TABLE cats2
 
   -- View dataypes and default values for cats3 table
   DESC cats3;
+
+  --- insert only age value
+  INSERT INTO cats3(age) VALUES(13);
+
+  --View what was added
+  SELECT * FROM cats3;
