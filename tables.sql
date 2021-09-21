@@ -316,3 +316,10 @@ INSERT INTO cats3() VALUES();
 
   --View what was added, will see only default values that were set
   SELECT * FROM cats3;
+
+
+  --- For cats table there is no default set so this command below will produce a row that has null values
+  INSERT INTO cats() values();
+
+    --View what was added, will see only null values were added
+  SELECT * FROM cats;
