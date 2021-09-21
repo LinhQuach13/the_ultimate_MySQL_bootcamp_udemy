@@ -323,3 +323,9 @@ INSERT INTO cats3() VALUES();
 
     --View what was added, will see only null values were added
   SELECT * FROM cats;
+
+  ---Insert name value and age value as null in cats3 table
+  INSERT INTO cats3(name, age) VALUES('Montana', NULL);
+
+    --View what was added, will see Montana for name column and NULL for age column
+  SELECT * FROM cats3;
