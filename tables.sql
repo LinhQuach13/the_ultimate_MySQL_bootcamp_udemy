@@ -329,3 +329,13 @@ INSERT INTO cats3() VALUES();
 
     --View what was added, will see Montana for name column and NULL for age column
   SELECT * FROM cats3;
+
+  -- create new cats4 table that has default values and does not have null values unless specified
+  CREATE TABLE cats4
+  (
+  name VARCHAR(100) NOT NULL DEFAULT 'unnamed',
+  age INT NOT NULL DEFAULT 99
+  );
+
+  --- view datatypes, columns, and default values for new table
+  DESC cats4;
