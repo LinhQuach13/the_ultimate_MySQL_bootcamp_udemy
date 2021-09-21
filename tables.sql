@@ -291,3 +291,16 @@ CREATE TABLE cats2
   --- you will see here that the name value is empty next to age 7 that was set
   --- it's an empty string, it's a type of VARCHAR value that has nothing in it, this is different from null values for integers
   SELECT * FROM cats2;
+
+
+
+  -------------SETTING DEFAULT VALUES FOR TABLES----------------
+  --- Create a new table names cats3 with default values in it
+  CREATE TABLE cats3
+  (
+  name VARCHAR(20) DEFAULT 'no name provided',
+  age INT DEFAULT 99
+  );
+
+  -- View dataypes and default values for cats3 table
+  DESC cats3;
