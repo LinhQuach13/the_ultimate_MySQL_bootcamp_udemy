@@ -310,3 +310,9 @@ CREATE TABLE cats2
 
   --View what was added
   SELECT * FROM cats3;
+
+--- insert a new row with no values 
+INSERT INTO cats3() VALUES();
+
+  --View what was added, will see only default values that were set
+  SELECT * FROM cats3;
