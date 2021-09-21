@@ -9,7 +9,7 @@ This a repository containing exercises and projects completed from the Udemy Cou
 * [Acknowlegdements](#acknowledegment)
 
 
-##<a name="language"></a> Language: 
+## <a name="language"></a> Language: 
 SQL
 
 ## <a name="creatingDB"></a>Creating Database Exercises:
