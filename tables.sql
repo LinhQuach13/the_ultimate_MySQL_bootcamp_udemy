@@ -330,7 +330,7 @@ INSERT INTO cats3() VALUES();
     --View what was added, will see Montana for name column and NULL for age column
   SELECT * FROM cats3;
 
-  -- create new cats4 table that has default values and does not have null values unless specified
+  -- create new cats4 table that has default values and does not allow for null values (meaning there cannot be any null values and must specify a value)
   CREATE TABLE cats4
   (
   name VARCHAR(100) NOT NULL DEFAULT 'unnamed',
@@ -339,3 +339,7 @@ INSERT INTO cats3() VALUES();
 
   --- view datatypes, columns, and default values for new table
   DESC cats4;
+
+  --Try to add null value to new table, this will produce error code ERROR 1048 (23000): Column 'age' cannot be null
+  --- This is because for the cats4 table we specified it cannot have null values when we created the table
+  INSERT INTO cats4(name, age) VALUES('Cali', NULL);
