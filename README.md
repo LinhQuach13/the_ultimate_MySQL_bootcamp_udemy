@@ -16,7 +16,7 @@ SQL
 Exercises for creating databases.
 
 ## <a name="tablesSQL"></a>Tables in SQL:
--Exercises for working with tables in SQL.
+Exercises for working with tables in SQL.
 
 
 ## Acknowledgements
